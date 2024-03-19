@@ -1,0 +1,132 @@
+body{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: rgba(221, 160, 221, 0.226)
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.font{
+    color: black;
+    text-decoration: none;
+    font-weight: 530;
+}
+.equal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.search{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: none;
+    border-radius: 40px;
+}
+.svg{
+    margin-left: 16px;
+}
+.input{
+    border: none;
+    padding: 16px 32px;
+    border-radius: 40px;
+}
+.font-color{
+    color: lightslategray;
+}
+.sign{
+    padding: 16px 24px;
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+}
+.btn{
+    border: none;
+    padding: 13px 32px;
+    background-color: rgba(230, 67, 230, 0.384);
+    border-radius: 40px;
+    margin: 0px auto;
+    display: block;
+    font-size: 16px;
+    margin-top: 90px;
+}
+.heading{
+    font-size: 82px;
+    text-align: center;
+    line-height: 78px;
+}
+.sub-heading{
+    font-size: 22px;
+    margin-top: -34px;
+    text-align: center;
+}
+.start{
+    padding: 16px 26px;
+    background-color: rgba(3, 3, 44, 0.747);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.main{
+    overflow: hidden;
+}
+.cards{
+    width: 2170px;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    /* overflow-x: auto; */
+    animation-name: card;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes card{
+    0%{}
+    100%{
+        transform: translate(-100%);
+    }
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card-img{
+    width: 260px;
+    height: 330px;
+    background-color: purple;
+    flex-shrink: 0;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tint{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(51.91%, transparent), color-stop(75.88%, rgba(0, 0, 0, 0.3)));
+    background: linear-gradient(180deg, transparent 51.91%, rgba(0, 0, 0, 0.3) 75.88%);
+}
